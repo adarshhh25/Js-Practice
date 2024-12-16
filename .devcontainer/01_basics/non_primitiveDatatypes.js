@@ -13,4 +13,11 @@ let x = function() {
     console.log("Hello World");
 }
 
-console.log(x)
+// console.log(x)
+
+
+let Myname = "adarsh jha"
+let anothername = Myname
+anothername = "om jha"
+console.log(anothername)
+console.log(Myname)
