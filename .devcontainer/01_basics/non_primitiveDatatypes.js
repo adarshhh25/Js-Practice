@@ -18,6 +18,6 @@ let x = function() {
 
 let Myname = "adarsh jha"
 let anothername = Myname
-anothername = "om jha"
+anothername = "Om Jha"
 console.log(anothername)
 console.log(Myname)
