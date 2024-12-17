@@ -49,3 +49,15 @@ const user = [
 console.log(Object.entries(regularUser))
 
 console.log(regularUser.hasOwnProperty('email'));
+
+
+const course  = {
+    c_name: "Js",
+    price: 100,
+    teacher: "Jha"
+}
+
+console.log(course.teacher)
+const {teacher: t} = course 
+// console.log(teacher)
+console.log(t)
