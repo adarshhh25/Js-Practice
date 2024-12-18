@@ -42,7 +42,7 @@ const coding = ["cpp", "py", "rb", "rust", "java"]
 // })
 
 coding.forEach((items, i ,adarsh) =>{
-  console.log(items, i, adarsh)
+//   console.log(items, i, adarsh)
 })
 
 // function print(items) {
@@ -67,6 +67,47 @@ const MyLanguage = [
 ]
 
 MyLanguage.forEach((items) =>{
-  console.log(items.name) 
-  console.log(items.sname)
+//   console.log(items.name) 
+//   console.log(items.sname)
 })
+
+const a = [11,12,13,14,15]
+
+// const value = a.forEach((items) => {
+//   console.log(items)
+//   return items
+// })
+
+// console.log(value)
+
+const newNum = a.filter( (num) => num > 12)
+
+console.log(newNum)
+
+const b = []
+
+a.forEach((num) => {
+    if(num > 4) {
+        b.push(num)
+    }
+})
+console.log(b)
+
+const books = [
+    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+  ];
+
+
+const userBooks = books.filter((age) => {
+    return (age.publish >= 1995 && age.genre === 'History')
+})
+
+console.log(userBooks)
